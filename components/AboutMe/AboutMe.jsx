@@ -22,9 +22,9 @@ const AboutMe=()=>{
 
                        <div className="grid grid-cols-3 space-x-2 space-y-2">
                        {
-                           skillArray.map((skill)=>{
+                           skillArray.map((skill,indx)=>{
                                return(
-                                <div className="flex flex-wrap items-center ml-2">
+                                <div className="flex flex-wrap items-center ml-2" key={indx}>
                                 <span>{skill.name}</span>
                                 <img src={skill.src} height="25px" width="25px"/>
                             </div>
