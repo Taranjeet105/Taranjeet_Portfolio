@@ -1,11 +1,12 @@
 import Image from "next/image"
 import {images, skills} from "../../constants/images"
+import style from "../AboutMe/style.module.css"
 const AboutMe=()=>{
     const skillArray=[{name:"Next js",src:skills.nextjs},{name:"Javascript",src:skills.javascript},{name:"Tailwind css",src:skills.tailwindcss},{name:"Node js",src:skills.nodejs},{name:"MongoDB",src:skills.mongodb},{name:"C++",src:skills.cpp},{name:"HTML",src:skills.html},{name:"Bootstrap",src:skills.bootstrap},{name:"CSS",src:skills.css}]
     return(
         <>
-            <div className={`${"flex flex-wrap justify-between sm:px-10 py-2 mt-5 shadow-2xl mx-2 sm:mx-10"} `}>
-                <div className="flex-col  sm:w-1/2 space-x-4">
+            <div className={`${style.wrapperClass} `}>
+                <div className={`${style.leftPanel} `}>
                     <div className="flex flex-wrap space-x-4">  
                         <div className="relative h-80 w-80 sm:h-48 sm:w-48 mr-2 mt-5">
                         <Image className="rounded-md" src={images.profilePhoto} alt="" layout="fill"/>

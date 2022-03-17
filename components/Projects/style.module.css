@@ -1,0 +1,31 @@
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #e6e4df;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #638de6;
+    border-radius: 100vh;
+   
+}
+
+
+.wrapperClass{
+    @apply flex-wrap flex mt-5 mx-10 justify-around
+}
+
+.customCard{
+    @apply px-10 py-5 rounded-md mb-4 shadow-2xl h-[30rem] overflow-scroll
+}
+
+.customCardImage{
+    @apply text-center hover:text-blue-500
+}
+.customCardBody{
+    @apply text-center
+}
