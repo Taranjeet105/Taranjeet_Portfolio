@@ -62,7 +62,7 @@ const Projects=()=>{
                             </h1>
 
                             <ul style={{ listStyleType:"disc" }} className="text-left mt-4 p-6">
-                               <li>Set reminder: Reminds 15 minutes prior to the event.</li>
+                            <li>Set reminder: Reminds 15 minutes prior to the event.</li>
                                 <li>Compile Code: Run c++, python, java, etc code in WhatsApp.</li>
                                 <li>Get the details of Past, future, and Live Contest From various Competitive Coding Websites like Codeforces, CodeChef, LeetCode Hackerrank, Google.</li>
                                 <li>Fetch Profile Details from Competitive coding websites with your handle.</li>
@@ -95,7 +95,7 @@ const Projects=()=>{
                             </h1>
 
                             <ul style={{ listStyleType:"disc" }} className="text-left mt-4 p-6">
-                               <li>User Friendly and responsive interface.</li>
+                            <li>User Friendly and responsive interface.</li>
                                 <li>White board.</li>
                                 <li>Attractive code Editor.</li>
                     
