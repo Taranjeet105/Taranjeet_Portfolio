@@ -4,11 +4,11 @@ const AboutMe=()=>{
     const skillArray=[{name:"Next js",src:skills.nextjs},{name:"Javascript",src:skills.javascript},{name:"Tailwind css",src:skills.tailwindcss},{name:"Node js",src:skills.nodejs},{name:"MongoDB",src:skills.mongodb},{name:"C++",src:skills.cpp},{name:"HTML",src:skills.html},{name:"Bootstrap",src:skills.bootstrap},{name:"CSS",src:skills.css}]
     return(
         <>
-            <div className={`${"flex flex-wrap justify-between sm:px-10 py-2 mt-5 shadow-2xl mx-10"} `}>
+            <div className={`${"flex flex-wrap justify-between sm:px-10 py-2 mt-5 shadow-2xl mx-2 sm:mx-10"} `}>
                 <div className="flex-col  sm:w-1/2 space-x-4">
                     <div className="flex flex-wrap space-x-4">  
                         <div className="relative h-80 w-80 sm:h-48 sm:w-48 mr-2 mt-5">
-                        <Image className="rounded-md" src={images.profilePhoto} layout="fill"/>
+                        <Image className="rounded-md" src={images.profilePhoto} alt="" layout="fill"/>
                         </div>
 
                         <div className="mt-5">
@@ -26,7 +26,7 @@ const AboutMe=()=>{
                                return(
                                 <div className="flex flex-wrap items-center ml-2" key={indx}>
                                     <span>{skill.name}</span>
-                                    <img src={skill.src} height="25px" width="25px"/>
+                                    <Image src={skill.src} alt="" height="25px" width="25px"/>
                                 </div>
                                )
                            })
